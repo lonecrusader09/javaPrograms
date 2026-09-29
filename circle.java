@@ -1,29 +1,19 @@
-import java.util.*;
+package shape;
 
-class circle_area
+public class circle
 {
+	int r;
+	double a;
 
-Scanner sc = new Scanner(System.in);
-int r;
-	void getr()
+	public void accept(int x)
 	{
-		System.out.print("Enter radius of circle:");
-		r = sc.nextInt();
+		r = x;
 	}
-
-	void area()
+	
+	public void area()
 	{
-		double area = 3.14 * r * r;
-		System.out.println("Area of circle : " + area);
+		a = 3.14 * r * r;
+		System.out.println("Area of circle:" + a);
 	}
 }
 
-class circle
-{
-	public static void main(String[] args)
-	{
-		circle_area c = new circle_area();
-		c.getr();
-		c.area();
-	}
-}
